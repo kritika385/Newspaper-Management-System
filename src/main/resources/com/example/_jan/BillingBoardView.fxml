@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="750.0" prefWidth="1099.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example._jan.billingboard.BillingBoard">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#000305" height="750.0" stroke="BLACK" strokeType="INSIDE" width="285.0" />
+      <Label layoutX="2.0" layoutY="312.0" text="Billing Board" textFill="WHITE">
+         <font>
+            <Font name="Bell MT Bold" size="48.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="277.0" fitWidth="280.0" layoutX="4.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@billing%20board.jpg" />
+         </image>
+      </ImageView>
+      <Line endX="159.60003662109375" layoutX="114.0" layoutY="376.0" startX="-100.0" stroke="WHITE" />
+      <Line endX="159.60003662109375" layoutX="112.0" layoutY="380.0" startX="-100.0" stroke="WHITE" />
+      <DatePicker fx:id="dateFrom" layoutX="34.0" layoutY="453.0" prefHeight="26.0" prefWidth="218.0" promptText="from date" />
+      <DatePicker fx:id="dateTo" layoutX="34.0" layoutY="528.0" prefHeight="26.0" prefWidth="218.0" promptText="to date" />
+      <ComboBox fx:id="comboStatus" layoutX="36.0" layoutY="610.0" prefHeight="26.0" prefWidth="218.0" />
+      <TextField fx:id="txtAmount" editable="false" layoutX="38.0" layoutY="692.0" prefHeight="26.0" prefWidth="218.0" promptText="total amount" />
+      <Label layoutX="34.0" layoutY="426.0" text="From" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="502.0" text="To" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="582.0" text="Bill Status" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="664.0" text="Amount" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableBilling" layoutX="295.0" layoutY="49.0" prefHeight="691.0" prefWidth="794.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="50.0" layoutX="284.0" layoutY="-1.0" stroke="BLACK" strokeType="INSIDE" width="816.0" />
+      <Button layoutX="614.0" layoutY="15.0" mnemonicParsing="false" onAction="#doFindNow" prefHeight="26.0" prefWidth="150.0" text="Find Now" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="718.0" prefWidth="1062.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example._jan.dashboard.Dashboard">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="719.0" stroke="BLACK" strokeType="INSIDE" width="1062.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="266.0" layoutX="824.0" layoutY="-1.0" stroke="BLACK" strokeType="INSIDE" width="238.0">
+         <fill>
+            <LinearGradient endX="0.1515151659647623" endY="0.3825757413199452" startX="0.4734847446282706">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.11093956977128983" green="0.10853800922632217" blue="0.2526315748691559" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.005542560014873743" green="0.0054580895230174065" blue="0.010526316240429878" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="209.0" layoutX="3.0" layoutY="509.0" rotate="-180.2" stroke="BLACK" strokeType="INSIDE" width="259.0">
+         <fill>
+            <LinearGradient endX="0.1515151659647623" endY="0.3825757413199452" startX="0.4734847446282706">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.11093956977128983" green="0.10853800922632217" blue="0.2526315748691559" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.005542560014873743" green="0.0054580895230174065" blue="0.010526316240429878" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2c2c2e7e" height="587.0" layoutX="36.0" layoutY="28.0" stroke="BLACK" strokeType="INSIDE" width="238.0" />
+      <Label layoutX="25.0" layoutY="26.0" prefHeight="58.0" prefWidth="230.0" text="DASHBOARD" textFill="WHITE">
+         <font>
+            <Font name="Bell MT Bold" size="36.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.12628069519996643" green="0.06896685808897018" blue="0.6421052813529968" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Label>
+      <Button fx:id="btnArea" layoutX="33.0" layoutY="105.0" mnemonicParsing="false" onAction="#doAreaMaster" onMouseEntered="#doHoverIn" onMouseExited="#doHoverOut" prefHeight="119.0" prefWidth="259.0" style="-fx-background-color: black;" text="Area Master" textFill="WHITE">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.0923352837562561" green="0.06284600496292114" blue="0.6526315808296204" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <ImageView fitHeight="112.0" fitWidth="107.0" layoutX="23.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@dashboardarea.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnPaper" layoutX="40.0" layoutY="234.0" mnemonicParsing="false" onAction="#doPaperMaster" onMouseEntered="#doHoverIn" onMouseExited="#doHoverOut" prefHeight="119.0" prefWidth="259.0" style="-fx-background-color: black;" text="Paper Master" textFill="WHITE">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.0499025359749794" green="0.12267706543207169" blue="0.6736842393875122" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <ImageView fitHeight="102.0" fitWidth="94.0" layoutX="26.0" layoutY="242.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@paperdash.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnHawker" layoutX="29.0" layoutY="367.0" mnemonicParsing="false" onAction="#doHawker" onMouseEntered="#doHoverIn" onMouseExited="#doHoverOut" prefHeight="119.0" prefWidth="270.0" style="-fx-background-color: black;" text="Hawker" textFill="WHITE">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.19649122655391693" green="0.19649122655391693" blue="0.6315789222717285" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <ImageView fitHeight="103.0" fitWidth="70.0" layoutX="43.0" layoutY="379.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@hawker.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnCustomer" layoutX="20.0" layoutY="496.0" mnemonicParsing="false" onAction="#doCustomer" onMouseEntered="#doHoverIn" onMouseExited="#doHoverOut" prefHeight="119.0" prefWidth="270.0" style="-fx-background-color: black;" text="Customer" textFill="WHITE">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.1325087696313858" green="0.09578947722911835" blue="0.410526305437088" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <ImageView fitHeight="42.0" fitWidth="55.0" layoutX="479.0" layoutY="576.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@customericon.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="200.0" layoutX="7.0" layoutY="356.0" stroke="BLACK" strokeType="INSIDE" width="27.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="656.0" layoutX="308.0" layoutY="16.0" stroke="BLACK" strokeType="INSIDE" width="671.0">
+         <effect>
+            <DropShadow blurType="ONE_PASS_BOX" height="81.83" radius="43.3375" spread="0.29" width="93.52">
+               <color>
+                  <Color red="0.16384665668010712" green="0.11539960652589798" blue="0.8421052694320679" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Rectangle>
+      <Label layoutX="82.0" layoutY="648.0" text="DEVELOPER - KRITIKA" textFill="WHITE" />
+      <ImageView fitHeight="102.0" fitWidth="107.0" layoutX="22.0" layoutY="505.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@customerboard.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="161.0" fitWidth="190.0" layoutX="370.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@billpay.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="131.0" fitWidth="141.0" layoutX="734.0" layoutY="271.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@billing%20board.jpg" />
+         </image>
+      </ImageView>
+      <Line endX="442.7999267578125" endY="8.600006103515625" layoutX="532.0" layoutY="249.0" opacity="0.44" startX="-226.0" startY="8.600006103515625" stroke="#3724df" strokeWidth="2.0">
+         <effect>
+            <Glow level="0.87" />
+         </effect>
+      </Line>
+      <Line endX="459.0" endY="8.600006103515625" layoutX="513.0" layoutY="457.0" opacity="0.44" startX="-209.0" startY="8.600006103515625" stroke="#3724df" strokeWidth="2.0">
+         <effect>
+            <Glow level="0.87" />
+         </effect>
+      </Line>
+      <Line endX="24.0" endY="220.19998168945312" layoutX="625.0" layoutY="246.0" opacity="0.44" startX="24.0" startY="-210.0" stroke="#3724df" strokeWidth="2.0">
+         <effect>
+            <Glow level="0.87" />
+         </effect>
+      </Line>
+      <Button fx:id="btnAnalyser" layoutX="533.0" layoutY="619.0" mnemonicParsing="false" onAction="#doAnalyser" onMouseEntered="#doHoverIn" onMouseExited="#doHoverOut" prefHeight="51.0" prefWidth="230.0" style="-fx-background-color: black;" text="Analyser" textFill="WHITE">
+         <effect>
+            <DropShadow height="44.39" radius="31.055" width="81.83">
+               <color>
+                  <Color red="0.2131669968366623" green="0.10978557169437408" blue="0.6736842393875122" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <ImageView fitHeight="131.0" fitWidth="150.0" layoutX="586.0" layoutY="474.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@analy.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnAllBills" layoutX="651.0" layoutY="413.0" mnemonicParsing="false" onAction="#doAllBills" onMouseEntered="#doHoverIn" onMouseExited="#doHoverOut" prefHeight="51.0" prefWidth="327.0" style="-fx-background-color: black;" text="    ALL BILLS" textFill="WHITE">
+         <effect>
+            <DropShadow height="0.0" radius="7.675000000000001" spread="0.18" width="32.7">
+               <color>
+                  <Color red="0.18089668452739716" green="0.09356725215911865" blue="0.8421052694320679" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <Button fx:id="btnCustData" layoutX="309.0" layoutY="411.0" mnemonicParsing="false" onAction="#doCustData" onMouseEntered="#doHoverIn" onMouseExited="#doHoverOut" prefHeight="51.0" prefWidth="339.0" style="-fx-background-color: black;" text="    Customer Data" textFill="WHITE">
+         <effect>
+            <DropShadow height="0.0" radius="21.71" spread="0.05" width="88.84">
+               <color>
+                  <Color red="0.17501235008239746" green="0.1303703635931015" blue="0.800000011920929" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <ImageView fitHeight="150.0" fitWidth="174.0" layoutX="378.0" layoutY="277.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@customerico.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnBillCollect" layoutX="309.0" layoutY="202.0" mnemonicParsing="false" onAction="#doBillCollect" onMouseEntered="#doHoverIn" onMouseExited="#doHoverOut" prefHeight="51.0" prefWidth="339.0" style="-fx-background-color: black;" text="        Bill Collect -Pay Bill" textFill="WHITE">
+         <effect>
+            <DropShadow height="0.0" radius="7.09" spread="0.19" width="30.36">
+               <color>
+                  <Color red="0.06370370090007782" green="0.0917556881904602" blue="0.9052631855010986" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <Button fx:id="btnBillCalc" layoutX="652.0" layoutY="197.0" mnemonicParsing="false" onAction="#doBillCalc" onMouseEntered="#doHoverIn" onMouseExited="#doHoverOut" prefHeight="58.0" prefWidth="327.0" style="-fx-background-color: black;" text="Bill Calculation" textFill="WHITE">
+         <effect>
+            <DropShadow height="0.0" radius="10.5975" spread="0.13" width="44.39">
+               <color>
+                  <Color red="0.1621624380350113" green="0.044600389897823334" blue="0.9263157844543457" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <ImageView fitHeight="161.0" fitWidth="174.0" layoutX="693.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@billcalicon.jpg" />
+         </image>
+      </ImageView>
+      <Hyperlink fx:id="linkLinkedIn" layoutX="98.0" layoutY="661.0" onAction="#doOpenLinkedIn" text="LinkedIn Profile" />
+   </children>
+</AnchorPane>

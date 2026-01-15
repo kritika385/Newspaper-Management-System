@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="750.0" prefWidth="1099.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example._jan.billcalculation.BillCalculation">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#000305" height="750.0" stroke="BLACK" strokeType="INSIDE" width="285.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#181818" height="45.0" stroke="BLACK" strokeType="INSIDE" width="1099.0" />
+      <Circle layoutX="824.0" layoutY="169.0" radius="82.0" stroke="BLACK" strokeType="INSIDE">
+         <fill>
+            <LinearGradient endX="0.24715909090909094" endY="0.13257575847885822" startX="0.5833333211414742" startY="0.7159091487075343">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.5329532027244568" green="0.2723196744918823" blue="0.5789473652839661" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.3027602434158325" green="0.22596491873264313" blue="0.8842105269432068" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Circle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#01060b" height="479.0" layoutX="306.0" layoutY="144.0" stroke="BLACK" strokeType="INSIDE" width="677.0" />
+      <Circle fill="#2e2a6e" layoutX="960.0" layoutY="194.0" radius="117.0" stroke="BLACK" strokeType="INSIDE" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="457.0" layoutX="315.0" layoutY="152.0" stroke="BLACK" strokeType="INSIDE" width="660.0" />
+      <Label layoutX="12.0" layoutY="28.0" text="BILLING" textFill="WHITE">
+         <font>
+            <Font name="Bell MT Bold" size="64.0" />
+         </font>
+      </Label>
+      <Label layoutX="12.0" layoutY="123.0" text="Generate bills by entering customer mobile" textFill="WHITE">
+         <font>
+            <Font name="Bell MT Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="10.0" layoutY="142.0" text="number,end date,and the reduced number " textFill="WHITE">
+         <font>
+            <Font name="Bell MT Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="21.0" layoutY="160.0" text="of days for which the service was used." textFill="WHITE">
+         <font>
+            <Font name="Bell MT Bold" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="234.0" fitWidth="244.0" layoutX="18.0" layoutY="197.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@bilcalcu.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="85.0" layoutY="481.0" mnemonicParsing="false" onAction="#doFetch" prefHeight="26.0" prefWidth="103.0" text="Fetch" />
+      <Button layoutX="87.0" layoutY="543.0" mnemonicParsing="false" onAction="#doSaveBill" prefHeight="26.0" prefWidth="103.0" text="Save Bill" />
+      <Button layoutX="87.0" layoutY="606.0" mnemonicParsing="false" onAction="#doGenerateBill" prefHeight="26.0" prefWidth="103.0" text="Generate Bill" />
+      <Button layoutX="87.0" layoutY="674.0" mnemonicParsing="false" onAction="#doRefresh" prefHeight="26.0" prefWidth="103.0" text="Refresh" />
+      <ImageView fitHeight="26.0" fitWidth="92.0" layoutX="164.0" layoutY="543.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@avail%20logo.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="43.0" layoutX="162.0" layoutY="674.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@update%20logo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="82.0" layoutX="162.0" layoutY="481.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@find.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="374.0" layoutY="199.0" prefHeight="18.0" prefWidth="103.0" text="Mobile number">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtMobile" layoutX="497.0" layoutY="193.0" prefHeight="26.0" prefWidth="271.0" promptText="enter mobile number" />
+      <Label layoutX="416.0" layoutY="262.0" text="Name" />
+      <TextField fx:id="txtName" layoutX="497.0" layoutY="254.0" prefHeight="26.0" prefWidth="267.0" promptText="enter name" />
+      <Label layoutX="386.0" layoutY="327.0" text="Date Of Start" />
+      <TextField fx:id="txtLessDays" layoutX="497.0" layoutY="458.0" prefHeight="26.0" prefWidth="267.0" promptText="enter less number of days" />
+      <Label layoutX="398.0" layoutY="398.0" text="Date Up to" />
+      <TextField fx:id="txtTotalPrice" layoutX="497.0" layoutY="529.0" prefHeight="26.0" prefWidth="267.0" />
+      <DatePicker fx:id="dateStart" layoutX="497.0" layoutY="324.0" prefHeight="26.0" prefWidth="267.0" promptText="select date of start" />
+      <DatePicker fx:id="dateEnd" layoutX="497.0" layoutY="390.0" prefHeight="26.0" prefWidth="267.0" promptText="select date up to" />
+      <Label layoutX="383.0" layoutY="463.0" text="Less No. of Days" />
+      <Label layoutX="416.0" layoutY="534.0" text="Total Price" />
+      <Label layoutX="520.0" layoutY="664.0" text="Bill Amount =">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtBillAmount" layoutX="630.0" layoutY="661.0" prefHeight="26.0" prefWidth="267.0" />
+   </children>
+</AnchorPane>
