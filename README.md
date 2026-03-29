@@ -14,6 +14,32 @@ A professional Desktop Application built to automate the daily operations of a N
 * **Database:** MySQL
 * **IDE:** IntelliJ IDEA
 
+---
+
+## 📸 Project Interface
+
+Here are some glimpses of the system:
+
+<table>
+  <tr>
+    <td><b>Dashboard</b><br><img src="DASHBOARD.png" width="400"></td>
+    <td><b>Sign Up Page</b><br><img src="SIGN%20UP.png" width="400"></td>
+  </tr>
+  <tr>
+    <td><b>Customer Enrollment</b><br><img src="CUSTOMER%20ENROLLMENT.png" width="400"></td>
+    <td><b>Billing Section</b><br><img src="BILLING.png" width="400"></td>
+  </tr>
+  <tr>
+    <td><b>Customer Board</b><br><img src="CUSTOMER%20BOARD.png" width="400"></td>
+    <td><b>Hawkers Console</b><br><img src="HAWKERS%20CONSOLE.png" width="400"></td>
+  </tr>
+  <tr>
+    <td><b>Paper Master</b><br><img src="PAPER%20MASTER.png" width="400"></td>
+    <td><b>Billing Board</b><br><img src="BILLING%20BOARD.png" width="400"></td>
+  </tr>
+</table>
+
+---
 
 ## 👩‍💻 Developer Information
 * **Name:** Kritika
